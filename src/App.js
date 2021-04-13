@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { LoginCallback, SecureRoute, Security } from '@okta/okta-react';
+import Home  from './Components/Home'
+import Search from './Components/Search';
 
 function App() {
+  //This is home component and conatin link to search component
+  //Here in this component we use okta developer api for user authentication
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <Router>
+    <header className="header"> 
+      <div>ProHooks</div>
+      <ul className="menu"><li><Link to="/">Home</Link></li><li><Link to="/search">Search</Link></li></ul>
+    </header>
+    <Security issuer='https://dev-07992770.okta.com/oauth2/default'
+              clientId='0oakladyvMoGOUqNU5d6'
+              redirectUri={window.location.origin + '/callback'}
+              pkce={true}>
+      <Route path='/' exact={true} component={Home}/>
+      <SecureRoute path='/search' exact={true} component={Search}/>
+      <Route path='/callback' component={LoginCallback}/>
+    </Security>
+  </Router>
+</div>
   );
 }
 
