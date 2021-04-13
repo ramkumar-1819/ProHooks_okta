@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ProHooks_okta/static/css/main.b48bf858.chunk.css",
+    "main.js": "/ProHooks_okta/static/js/main.e19282f0.chunk.js",
+    "main.js.map": "/ProHooks_okta/static/js/main.e19282f0.chunk.js.map",
+    "runtime-main.js": "/ProHooks_okta/static/js/runtime-main.18522fc7.js",
+    "runtime-main.js.map": "/ProHooks_okta/static/js/runtime-main.18522fc7.js.map",
+    "static/js/2.10adc0fe.chunk.js": "/ProHooks_okta/static/js/2.10adc0fe.chunk.js",
+    "static/js/2.10adc0fe.chunk.js.map": "/ProHooks_okta/static/js/2.10adc0fe.chunk.js.map",
+    "static/js/3.b542e825.chunk.js": "/ProHooks_okta/static/js/3.b542e825.chunk.js",
+    "static/js/3.b542e825.chunk.js.map": "/ProHooks_okta/static/js/3.b542e825.chunk.js.map",
+    "index.html": "/ProHooks_okta/index.html",
+    "static/css/main.b48bf858.chunk.css.map": "/ProHooks_okta/static/css/main.b48bf858.chunk.css.map",
+    "static/js/2.10adc0fe.chunk.js.LICENSE.txt": "/ProHooks_okta/static/js/2.10adc0fe.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.18522fc7.js",
+    "static/js/2.10adc0fe.chunk.js",
+    "static/css/main.b48bf858.chunk.css",
+    "static/js/main.e19282f0.chunk.js"
+  ]
+}
